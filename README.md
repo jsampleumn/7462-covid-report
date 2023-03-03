@@ -1,7 +1,7 @@
 Minnesota COVID Report
 ================
 
-Report last run: 2023-03-03 21:14:55
+Report last run: 2023-03-03 21:39:08
 
 ## Introduction
 
@@ -48,7 +48,7 @@ populous Minnesota counties:
 ## Identify the top 10 most populous counties
 top10_pop <- pops %>% filter(state == "Minnesota") %>%
   arrange(desc(pop)) %>%
-  slice(1:10) %>%
+  slice(1:5) %>%
   mutate(county = factor(county))
 
 ## Make the plot
